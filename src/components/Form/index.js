@@ -16,7 +16,7 @@ function Form() {
             setErrors('ERRO: URL inválida!')
             return false
         } else {
-            return url.substring(32, 43) // id do video
+            return url.substring(32, 43)
         }
     }
 
@@ -32,14 +32,11 @@ function Form() {
             setErrors('')
         }
 
-        // validar url
         const urlVideo = valideUrl(url)
         if(urlVideo && category) {
-            // guardar a url e a category
             const newVideo = { url, category }
             setVideos([...videos, newVideo])
             localStorage.setItem('videos', JSON.stringify([...videos, newVideo]))
-            // limpar o form
             setUrl('')
             setCategory('')
         } else {

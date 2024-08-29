@@ -21,10 +21,9 @@
     text-decoration: none;
     color: #fff;
     padding-inline: 1rem;
-    font-size: 1.125rem; /* 18px = 1.125rem; */
+    font-size: 1.125rem;
 }
 
-/* responsividade extra 01 */
 @media (max-width: 480px) {
     .header span {
         font-size: 1.5rem;
